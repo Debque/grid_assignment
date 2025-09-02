@@ -16,8 +16,18 @@
     "sidebar main"
   ;
 }
+ header, .sidebar main {
+    height: 50dvh;
+ }
 
-
+ @media (max-width: 600px) {
+  header,
+  .sidebar,
+  main {
+    height: auto; /* Let content define height on small screens */
+    min-height: 40dvh; /* Optional: minimum height for better spacing */
+  }
+}
 
 header {
     grid-area: header;
