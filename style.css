@@ -16,48 +16,41 @@
     "sidebar main"
   ;
 }
- header, .sidebar, main {
-    height: auto;
+
+header, .sidebar, main {
     min-height: 40dvh;
     padding-left: 20px;
     padding-top: 20px;
- }
-
- @media (max-width: 600px) {
-  header,
-  .sidebar,
-  main {
-    height: auto; /* Let content define height on small screens */
-    min-height: 40dvh; /* Optional: minimum height for better spacing */
-  }
 }
+
 
 header {
     grid-area: header;
-    background-color: #f0f0f0;
+    background-color: lightgray;
+    height: 400px;
     position: relative;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 340px;
+    padding-top: 50px;
 }
 
 .circle {
-    
-    position: static;
-        display: block;
-        margin: 0 auto 20px auto;
-        width: 150px;
-        height: 150px;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     
     
 }
 
 .circle img {
-    
-   width: 150px;
-   height: 150px;
-   border-radius: 50%;
-   object-fit: cover;
-
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .sidebar {
@@ -66,15 +59,16 @@ header {
     
 }
 
-.sidebar > h3{
+.sidebar > h3 {
     text-align: center;
 }
 
 main {
     grid-area: main;
     background-color: lightcyan;
-    
+   
 }
-main > h3{
+
+main > h3 {
     text-align: center;
 }
